@@ -23,7 +23,7 @@ const eventDetailSchema = new mongoose.Schema({
 });
 
 const eventSchema = new mongoose.Schema({
-  id: { type: Number, required: false, unique: false },
+  id: { type: mongoose.Schema.Types.ObjectId, default: () => new mongoose.Types.ObjectId() },
   title: { type: String, required: true },
   type: { type: String, required: true },
   date: { type: String, required: false },
