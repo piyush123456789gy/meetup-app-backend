@@ -18,7 +18,7 @@ initialiseDatabase();
 
 const cors = require("cors");
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://frontend-for-meetup-9mq15ntbc-piyush-goyals-projects-72282e7a.vercel.app",
     methods: "GET,POST,PUT,DELETE", // Allow necessary methods
 
   credentials: true,
